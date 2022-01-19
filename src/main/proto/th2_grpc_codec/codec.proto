@@ -23,4 +23,5 @@ option java_package = "com.exactpro.th2.codec.grpc";
 
 service Codec {
     rpc decode (MessageGroupBatch) returns (MessageGroupBatch) {}
+    rpc encode (MessageGroupBatch) returns (MessageGroupBatch) {}
 }
