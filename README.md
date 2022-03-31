@@ -1,4 +1,4 @@
-# th2 gRPC codec library (0.0.4)
+# th2 gRPC codec library (0.0.2)
 
 This library contains proto messages and `Codec` service with RPC methods that are used in [th2 codec](https://github.com/th2-net/th2-codec "th2-codec"). See [codec.proto](src/main/proto/th2_grpc_codec/codec.proto "codec.proto") file for details. <br>
 Tool generates code from `.proto` files and uploads built packages (`.proto` files and generated code) to the specified repositories.
@@ -38,17 +38,10 @@ If you wish to manually create and publish a package for Python:
 
 ## Release notes
 
-### 0.0.4
-
-+ Update serviceGeneratorVersion and grpcCommonVersion to support gRPC pins filters.
-
-### 0.0.3
-
-+ Downgrade grpcVersion and protobufVersion for compatibility with th2-grpc-common.
-
 ### 0.0.2
 
 + Added 'encode' method
++ Updated serviceGeneratorVersion and grpcCommonVersion to support gRPC pins filters.
 
 ### 0.0.1
 
