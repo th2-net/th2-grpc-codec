@@ -17,7 +17,7 @@ ext {
     grpcVersion = '1.32.1'
     protobufVersion = '3.13.0'
     serviceGeneratorVersion = '3.2.0'
-    grpcCommonVersion = '3.10.0'
+    grpcCommonVersion = '3.13.0'
 
     genDir = file("${project.rootDir}/src/gen")
     sharedDir = file("${project.rootDir}/shared")
