@@ -26,7 +26,7 @@ ext {
     serviceGeneratorVersion = '3.4.0'
     grpcCommonVersion = '4.3.0-dev'
 
-    genDir = file("${project.rootDir}/src/gen")
+    genBaseDir = file("${buildDir}/generated/source/proto") // from protobuf plugin
 }
 
 repositories {
@@ -61,7 +61,7 @@ sourceSets {
     main {
         // the proto plugins add generated dir to source sets
         resources {
-            srcDirs 'src/gen/main/services/java/resources'
+            srcDirs "$genBaseDir/main/services/java/resources"
         }
     }
 }
@@ -186,10 +186,6 @@ signing {
     String signingPassword = findProperty("signingPassword")
     useInMemoryPgpKeys(signingKey, signingPassword)
     sign publishing.publications.mavenJava
-}
-
-clean {
-    delete genDir
 }
 
 dependencyLocking {
