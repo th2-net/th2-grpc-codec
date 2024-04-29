@@ -1,4 +1,4 @@
-# th2 gRPC codec library (0.1.0)
+# th2 gRPC codec library (0.2.0)
 
 This library contains proto messages and `Codec` service with RPC methods that are used in [th2 codec](https://github.com/th2-net/th2-codec "th2-codec"). See [codec.proto](src/main/proto/th2_grpc_codec/codec.proto "codec.proto") file for details. <br>
 Tool generates code from `.proto` files and uploads built packages (`.proto` files and generated code) to the specified repositories.
@@ -37,6 +37,11 @@ If you wish to manually create and publish a package for Python:
     `PYPI_REPOSITORY_URL`, `PYPI_USER` and `PYPI_PASSWORD` are parameters for publishing.
 
 ## Release notes
+
+### 0.2.0
+
++ Migrated to th2 gradle plugin: `0.0.6` based on bom: `4.6.1`
++ Updated grpc-common: `4.5.0-dev`
 
 ### 0.1.0
 
