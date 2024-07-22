@@ -8,7 +8,7 @@ jobs:
     with:
       build-target: 'Sonatype'
       runsOn: ubuntu-latest
-      gradleVersion: '7'
+      gradleVersion: '8'
       devRelease: false
       createTag: true
     secrets:
